@@ -1,6 +1,6 @@
 # Creates a Windows Server 2022 VM instance in AWS
 resource "aws_instance" "windows_instance" {
-  ami                      = "ami-001adaa5c3ee02e10"                                                  # Windows Server 2022 in us-east-1
+  ami                      = "ami-008a7af5c4c774b52"                                                  # Windows Server 2022 in us-east-1
   instance_type            = "t3.medium"                                                              # Instance type (compute resources)
   subnet_id                = aws_subnet.cabbage_subnet.id                                             # Subnet ID for the instance
   vpc_security_group_ids   = [aws_security_group.cabbage_sg.id]                                       # Security group for the instance
